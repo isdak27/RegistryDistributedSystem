@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "T1hnStyhqjHyUv8KUP+cfxOeZE1lVPsqN/oKw496ARU=",
+  "Source": "SubjectWebAPI",
+  "BasePath": "_content/SubjectWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -4352,19 +4352,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS_I7\\.nuget\\packages\\": {}
+    "C:\\Users\\57313\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS_I7\\Desktop\\Backend-SisDistrib\\AuthenticationWebAPI\\AuthenticationWebAPI\\AuthenticationWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\57313\\Desktop\\pro\\RegistryDistributedSystem\\AuthenticationWebAPI\\AuthenticationWebAPI\\AuthenticationWebAPI.csproj",
       "projectName": "AuthenticationWebAPI",
-      "projectPath": "C:\\Users\\ASUS_I7\\Desktop\\Backend-SisDistrib\\AuthenticationWebAPI\\AuthenticationWebAPI\\AuthenticationWebAPI.csproj",
-      "packagesPath": "C:\\Users\\ASUS_I7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS_I7\\Desktop\\Backend-SisDistrib\\AuthenticationWebAPI\\AuthenticationWebAPI\\obj\\",
+      "projectPath": "C:\\Users\\57313\\Desktop\\pro\\RegistryDistributedSystem\\AuthenticationWebAPI\\AuthenticationWebAPI\\AuthenticationWebAPI.csproj",
+      "packagesPath": "C:\\Users\\57313\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\57313\\Desktop\\pro\\RegistryDistributedSystem\\AuthenticationWebAPI\\AuthenticationWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS_I7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\57313\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4372,6 +4372,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4425,7 +4426,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -4437,7 +4439,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.116\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -15,6 +15,10 @@ namespace AuthenticationWebAPI.Controllers
     {
         private readonly AuthenticationDbContext _dbContext;
 
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public readonly ILogger<EmailSendingController> _logger;
+
         public UserController(AuthenticationDbContext dbContext)
         {
             _dbContext = dbContext;
@@ -39,6 +43,10 @@ namespace AuthenticationWebAPI.Controllers
             // Agregamos el usuario a la base de datos
             _dbContext.Users.Add(newUser);
             _dbContext.SaveChanges();
+
+            //sending an email with the user created
+            
+
 
             return Ok(newUser);
         }
@@ -98,6 +106,36 @@ namespace AuthenticationWebAPI.Controllers
 
             // Devolvemos el password encriptado
             return hashedPassword;
+        }
+
+        private async Task CreateEmailSendingRequest(User user)
+
+        {
+
+            HttpClient httpClient1 = _httpClientFactory.CreateClient();
+            var httpClient = httpClient1;
+            // Set the base URL of the target API
+            httpClient.BaseAddress = new Uri("https://localhost:7000/api/EmailSending");
+
+            // Create a new request
+            var request = new HttpRequest(HttpMethod.Post, user);
+
+            // Send the request and retrieve the response
+            var response = await httpClient.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                // Read the response content
+                var content = await response.Content.ReadAsStringAsync();
+
+                // Return the response content as the result
+                return Ok(content);
+            }
+            else
+            {
+                // Request failed
+                return StatusCode((int)response.StatusCode);
+            }
         }
     }
 }
